@@ -13,6 +13,6 @@ diff: /../Podfile.lock: No such file or directory
 
 1 . pod이 설치된 곳으로 경로를 이동합니다.(이때 Xcode를 꺼주세요.)
 2 . 커맨드창에 ```rm -rf Pods``` 를 해줍니다.
-3 . 다 되면 ```rm -rf Podfile.lock```을 해주면 pod에 대한 부분이 모두 삭제될 겁니다,
+3 . 다 되면 ```rm -rf Podfile.lock```을 해주면 pod에 대한 부분이 모두 삭제될 겁니다.
 4 . ```pod install```을해서 다시 설치 해 줍니다.
 5 . Xcode를 켜서 빌드 한번 새로하면 정상작동!  
