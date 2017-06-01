@@ -10,9 +10,8 @@
 
 ```Git```
 
- - [diff crash] (https://github.com/jeongjinho/IOS2jinho/blob/master/Class/Override.md)
-
-
+ - [diff crash] (https://github.com/jeongjinho/IOSdev/blob/master/GitCrashes/diffCrashes.md)
+ - [not commit modified content] (https://github.com/jeongjinho/IOSdev/blob/master/GitCrashes/modified%20content%20Crash.md)
 
 
 ```Objective - C ```
