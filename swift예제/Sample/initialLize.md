@@ -3,7 +3,7 @@
 
 ## 이곳은  공부하면서 활용한 initilaLizing을 정리 해놓은 것 입니다. ##
 
-###01
+### 01
 ```swift
 let profileImageView: UIImageView = {
 
