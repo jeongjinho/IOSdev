@@ -1,4 +1,4 @@
-##Git Crash##
+## Git Crash ##
 ```
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
