@@ -1,4 +1,4 @@
-##Git Crash ##
+## Git Crash ##
 ```diff: /../Podfile.lock: No such file or directory
  diff: /Manifest.lock: No such file or directory error: The sandbox is not in sync with the Podfile.lock. 
  Run 'pod install' or update your CocoaPods installation.
