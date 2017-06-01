@@ -13,10 +13,6 @@
 		7BD7EB6A1EDEEFDE001D99C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD7EB681EDEEFDE001D99C0 /* LaunchScreen.storyboard */; };
 		7BD7EB721EDEF05D001D99C0 /* FriendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD7EB711EDEF05D001D99C0 /* FriendVC.swift */; };
 		7BD7EB761EE020FD001D99C0 /* fbMessanger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7BD7EB741EE020FD001D99C0 /* fbMessanger.xcdatamodeld */; };
-		7BD7EB7D1EE022F3001D99C0 /* Friend+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD7EB791EE022F3001D99C0 /* Friend+CoreDataClass.swift */; };
-		7BD7EB7E1EE022F3001D99C0 /* Friend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD7EB7A1EE022F3001D99C0 /* Friend+CoreDataProperties.swift */; };
-		7BD7EB7F1EE022F3001D99C0 /* Message+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD7EB7B1EE022F3001D99C0 /* Message+CoreDataClass.swift */; };
-		7BD7EB801EE022F3001D99C0 /* Message+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD7EB7C1EE022F3001D99C0 /* Message+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +24,6 @@
 		7BD7EB6B1EDEEFDE001D99C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BD7EB711EDEF05D001D99C0 /* FriendVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendVC.swift; sourceTree = "<group>"; };
 		7BD7EB751EE020FD001D99C0 /* fbMessanger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = fbMessanger.xcdatamodel; sourceTree = "<group>"; };
-		7BD7EB791EE022F3001D99C0 /* Friend+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataClass.swift"; sourceTree = "<group>"; };
-		7BD7EB7A1EE022F3001D99C0 /* Friend+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		7BD7EB7B1EE022F3001D99C0 /* Message+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+CoreDataClass.swift"; sourceTree = "<group>"; };
-		7BD7EB7C1EE022F3001D99C0 /* Message+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,10 +40,6 @@
 		7BD7EB531EDEEFDD001D99C0 = {
 			isa = PBXGroup;
 			children = (
-				7BD7EB791EE022F3001D99C0 /* Friend+CoreDataClass.swift */,
-				7BD7EB7A1EE022F3001D99C0 /* Friend+CoreDataProperties.swift */,
-				7BD7EB7B1EE022F3001D99C0 /* Message+CoreDataClass.swift */,
-				7BD7EB7C1EE022F3001D99C0 /* Message+CoreDataProperties.swift */,
 				7BD7EB5E1EDEEFDE001D99C0 /* fbMessanger */,
 				7BD7EB5D1EDEEFDE001D99C0 /* Products */,
 			);
@@ -153,10 +141,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BD7EB761EE020FD001D99C0 /* fbMessanger.xcdatamodeld in Sources */,
-				7BD7EB7D1EE022F3001D99C0 /* Friend+CoreDataClass.swift in Sources */,
-				7BD7EB7E1EE022F3001D99C0 /* Friend+CoreDataProperties.swift in Sources */,
-				7BD7EB7F1EE022F3001D99C0 /* Message+CoreDataClass.swift in Sources */,
-				7BD7EB801EE022F3001D99C0 /* Message+CoreDataProperties.swift in Sources */,
 				7BD7EB721EDEF05D001D99C0 /* FriendVC.swift in Sources */,
 				7BD7EB601EDEEFDE001D99C0 /* AppDelegate.swift in Sources */,
 			);
