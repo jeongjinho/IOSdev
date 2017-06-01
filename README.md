@@ -10,6 +10,7 @@
 
 ```Git```
 
+ - [diff crash] (https://github.com/jeongjinho/IOS2jinho/blob/master/Class/Override.md)
 
 
 
