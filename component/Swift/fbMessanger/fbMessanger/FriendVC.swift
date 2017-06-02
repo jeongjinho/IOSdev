@@ -10,9 +10,10 @@ import Foundation
 import UIKit
 
 
+
 class FriendVC: UICollectionViewController,UICollectionViewDelegateFlowLayout {
     
-    
+ 
     private let FriendID = "Cell_id"
     
     override func viewDidLoad() {
@@ -127,7 +128,7 @@ class BaseCell: UICollectionViewCell{
     
     
     override func awakeFromNib() {
-        self.backgroundColor = UIColor.blue
+        //self.backgroundColor = UIColor.blue
         
     }
    
