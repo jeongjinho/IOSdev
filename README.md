@@ -10,11 +10,11 @@
 
 ```Git```
 
+ - [diff crash] (https://github.com/jeongjinho/IOSdev/blob/master/GitCrashes/diffCrashes.md)
+ - [not commit modified content] (https://github.com/jeongjinho/IOSdev/blob/master/GitCrashes/modified%20content%20Crash.md)
 
 
 
-
-```Objective - C ```
 
 
 
@@ -24,6 +24,6 @@
 
 
 ```Swift```
-
+- [Initializing] (https://github.com/jeongjinho/IOSdev/blob/master/swift%EC%98%88%EC%A0%9C/Sample/initialLize.md)
 
 ``` Cordova & Ionic ```
