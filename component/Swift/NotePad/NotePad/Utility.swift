@@ -54,9 +54,22 @@ class Utility {
         let info = "\(function)[\(line)]:\(object)"
         print(info)
     }
-
+  static  func dateString(date inputdate: Date, inputFomat:String) -> String {
+        
+        let date = inputdate
+        let formatter = DateFormatter()
+        formatter.dateFormat = inputFomat
+        
+     return   formatter.string(from: date)
+    }
+    
+   static func genderOptString(string optString: String?) -> String{
+        
+        guard let string = optString else { return "" }
+        
+        return string
+    }
 }
-
 // typealias AlertTypeHandler = ((UIAlertAction) ->Void)
 class DefaultAlert {
     

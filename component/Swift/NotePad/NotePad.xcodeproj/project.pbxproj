@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7BF542CA1EE2E1880093D811 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF542C91EE2E1880093D811 /* AppDelegate.swift */; };
-		7BF542CC1EE2E1880093D811 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF542CB1EE2E1880093D811 /* ViewController.swift */; };
+		7BF542CC1EE2E1880093D811 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF542CB1EE2E1880093D811 /* MainVC.swift */; };
 		7BF542CF1EE2E1880093D811 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF542CD1EE2E1880093D811 /* Main.storyboard */; };
 		7BF542D21EE2E1880093D811 /* NotePad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7BF542D01EE2E1880093D811 /* NotePad.xcdatamodeld */; };
 		7BF542D41EE2E1880093D811 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BF542D31EE2E1880093D811 /* Assets.xcassets */; };
@@ -17,12 +17,14 @@
 		7BF542E11EE2E5DC0093D811 /* WritingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF542E01EE2E5DC0093D811 /* WritingVC.swift */; };
 		7BF542E51EE2EBAF0093D811 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF542E41EE2EBAF0093D811 /* Utility.swift */; };
 		7BF542E71EE3E0300093D811 /* ReadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF542E61EE3E0300093D811 /* ReadVC.swift */; };
+		7BF542EA1EE449580093D811 /* CoreDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF542E91EE449580093D811 /* CoreDataVC.swift */; };
+		7BF542EC1EE451260093D811 /* MainCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF542EB1EE451260093D811 /* MainCollectionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7BF542C61EE2E1880093D811 /* NotePad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotePad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BF542C91EE2E1880093D811 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7BF542CB1EE2E1880093D811 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7BF542CB1EE2E1880093D811 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		7BF542CE1EE2E1880093D811 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BF542D11EE2E1880093D811 /* NotePad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotePad.xcdatamodel; sourceTree = "<group>"; };
 		7BF542D31EE2E1880093D811 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,6 +34,8 @@
 		7BF542E01EE2E5DC0093D811 /* WritingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WritingVC.swift; sourceTree = "<group>"; };
 		7BF542E41EE2EBAF0093D811 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		7BF542E61EE3E0300093D811 /* ReadVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadVC.swift; sourceTree = "<group>"; };
+		7BF542E91EE449580093D811 /* CoreDataVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataVC.swift; sourceTree = "<group>"; };
+		7BF542EB1EE451260093D811 /* MainCollectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCollectionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				7BF542C81EE2E1880093D811 /* NotePad */,
+				7BF542F41EE456DE0093D811 /* StoryBoard */,
 				7BF542C71EE2E1880093D811 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,19 +69,109 @@
 		7BF542C81EE2E1880093D811 /* NotePad */ = {
 			isa = PBXGroup;
 			children = (
-				7BF542E41EE2EBAF0093D811 /* Utility.swift */,
 				7BF542C91EE2E1880093D811 /* AppDelegate.swift */,
-				7BF542CB1EE2E1880093D811 /* ViewController.swift */,
-				7BF542E01EE2E5DC0093D811 /* WritingVC.swift */,
-				7BF542E61EE3E0300093D811 /* ReadVC.swift */,
-				7BF542CD1EE2E1880093D811 /* Main.storyboard */,
-				7BF542DE1EE2E2080093D811 /* CollectionViewCell.swift */,
-				7BF542D31EE2E1880093D811 /* Assets.xcassets */,
-				7BF542D51EE2E1880093D811 /* LaunchScreen.storyboard */,
-				7BF542D81EE2E1880093D811 /* Info.plist */,
-				7BF542D01EE2E1880093D811 /* NotePad.xcdatamodeld */,
+				7BF542EF1EE456950093D811 /* Utility */,
+				7BF542F01EE456A20093D811 /* CoreDataVC */,
+				7BF542E81EE442220093D811 /* Main */,
+				7BF542F21EE456C60093D811 /* Writing */,
+				7BF542F31EE456CF0093D811 /* Reading */,
+				7BF542F61EE457110093D811 /* Resource */,
+				7BF542F51EE457090093D811 /* CoreDataModel */,
 			);
 			path = NotePad;
+			sourceTree = "<group>";
+		};
+		7BF542E81EE442220093D811 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7BF542F11EE456B60093D811 /* View */,
+				7BF542EE1EE4565B0093D811 /* ViewModel */,
+				7BF542ED1EE4564D0093D811 /* ViewController */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		7BF542ED1EE4564D0093D811 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7BF542CB1EE2E1880093D811 /* MainVC.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		7BF542EE1EE4565B0093D811 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7BF542EB1EE451260093D811 /* MainCollectionViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		7BF542EF1EE456950093D811 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				7BF542E41EE2EBAF0093D811 /* Utility.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		7BF542F01EE456A20093D811 /* CoreDataVC */ = {
+			isa = PBXGroup;
+			children = (
+				7BF542E91EE449580093D811 /* CoreDataVC.swift */,
+			);
+			name = CoreDataVC;
+			sourceTree = "<group>";
+		};
+		7BF542F11EE456B60093D811 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7BF542DE1EE2E2080093D811 /* CollectionViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7BF542F21EE456C60093D811 /* Writing */ = {
+			isa = PBXGroup;
+			children = (
+				7BF542E01EE2E5DC0093D811 /* WritingVC.swift */,
+			);
+			name = Writing;
+			sourceTree = "<group>";
+		};
+		7BF542F31EE456CF0093D811 /* Reading */ = {
+			isa = PBXGroup;
+			children = (
+				7BF542E61EE3E0300093D811 /* ReadVC.swift */,
+			);
+			name = Reading;
+			sourceTree = "<group>";
+		};
+		7BF542F41EE456DE0093D811 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				7BF542CD1EE2E1880093D811 /* Main.storyboard */,
+				7BF542D51EE2E1880093D811 /* LaunchScreen.storyboard */,
+			);
+			name = StoryBoard;
+			path = NotePad;
+			sourceTree = "<group>";
+		};
+		7BF542F51EE457090093D811 /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				7BF542D01EE2E1880093D811 /* NotePad.xcdatamodeld */,
+			);
+			name = CoreDataModel;
+			sourceTree = "<group>";
+		};
+		7BF542F61EE457110093D811 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				7BF542D31EE2E1880093D811 /* Assets.xcassets */,
+				7BF542D81EE2E1880093D811 /* Info.plist */,
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,12 +247,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BF542D21EE2E1880093D811 /* NotePad.xcdatamodeld in Sources */,
-				7BF542CC1EE2E1880093D811 /* ViewController.swift in Sources */,
+				7BF542CC1EE2E1880093D811 /* MainVC.swift in Sources */,
 				7BF542E51EE2EBAF0093D811 /* Utility.swift in Sources */,
+				7BF542EC1EE451260093D811 /* MainCollectionViewModel.swift in Sources */,
 				7BF542DF1EE2E2080093D811 /* CollectionViewCell.swift in Sources */,
 				7BF542CA1EE2E1880093D811 /* AppDelegate.swift in Sources */,
 				7BF542E71EE3E0300093D811 /* ReadVC.swift in Sources */,
 				7BF542E11EE2E5DC0093D811 /* WritingVC.swift in Sources */,
+				7BF542EA1EE449580093D811 /* CoreDataVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
