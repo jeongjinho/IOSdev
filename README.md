@@ -24,6 +24,8 @@
 
 
 ```Swift```
-- [Initializing] (https://github.com/jeongjinho/IOSdev/blob/master/swift%EC%98%88%EC%A0%9C/Sample/initialLize.md)
-
+ - 문법
+  - [Initializing] (https://github.com/jeongjinho/IOSdev/blob/master/swift%EC%98%88%EC%A0%9C/Sample/initialLize.md)
+ - 코어
+  - [CoreData] ()
 ``` Cordova & Ionic ```
