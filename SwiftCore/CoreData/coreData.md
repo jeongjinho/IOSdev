@@ -30,17 +30,26 @@
 그릇을 만들었으니 이제 데이터를 담아보겠습니다. 
 
 
-그전에 AppDelegate.swift를 보면 그전 보다 함수와 프로퍼티가 더 추가 된 것을 볼 수 있습니다.앱델리게이트 
-``` let delegate = UIApplication.shared.delegate as! AppDelegate```를 통해서 델리게이트 가져올 수 있습니다. 
+그전에 AppDelegate.swift를 보면 그전 보다 함수와 프로퍼티가 더 추가 된 것을 볼 수 있습니다.
+앱델리게이트 ``` let delegate = UIApplication.shared.delegate as! AppDelegate```를 통해서 델리게이트 가져올 수 있습니다. 
 이것을 통해서 context에 접근하고 fetchRequest를 생성 할 수 있습니다. 
 
 이것을 토대로 저는 하나의 클래스로 만들어서 관리하는 코드를 작성해 보았습니다. 
 //[코어데이터2]
-fetchRequest같은경우 생성 ㅇㄴㅇ
+fetchRequest같은경우 생성된 것을 가져오는 것이 아니라 새로 생성해야 하기 때문에 초기화를 했습니다.
 
+이것을 토대로 Note라는 곳에 접근해서 데이터를 저장해 보겠습니다. 
+[코어데이터3] 
+미리 만들어 놓은 Class 내에 삽입 메서드입니다. NotePad의 context를 참조하여 Entity에 접근할 수 있습니다.
 
+[코어데이터4]
+가지고온 newMemo는 NSManagedObject를 객체를 참조하기때문에 여기서 setValue를 통해서 값을 넣어 줄 수 있습니다. 
+그다음 반드시 save를 해줘야 최종적으로 NotePad에 영구적으로 정작 됩니다.
 
+[코어데이터5]
+미리 만들어 Class 내의 저장 메서드입니다.(context에 접근할떄는  do catch 구문을 쓰도록 되어 있습니다.)
 
-
-
-
+그리고 졍렬또한 메서드로 구현이 간단히 가능합니다.
+[코어데이터6]
+생성된 fetchRequest에 NSSortDescriptor를 통해서 해당 Entity에 목록를 가져올 때 key 에
+들어가는 attribute 를 오름차순 또는 내림차순으로 가져올 수 있습니다.
