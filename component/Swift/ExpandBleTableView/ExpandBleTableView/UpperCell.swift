@@ -10,8 +10,12 @@ import UIKit
 
 class UpperCell: UITableViewCell {
 
-//    @IBOutlet weak var schoolNameLabel: UILabel!
-//    @IBOutlet weak var rankLabel: UILabel!
+    @IBOutlet weak var schoolNameLabel: UILabel!
+    @IBOutlet weak var rankLabel: UILabel!
+    
+   
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

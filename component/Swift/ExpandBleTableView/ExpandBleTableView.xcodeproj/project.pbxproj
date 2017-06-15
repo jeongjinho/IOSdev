@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B0960561EE98249000A5E3D /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0960551EE98249000A5E3D /* CellViewModel.swift */; };
 		7BF828411EE6BD64006F7AE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF828401EE6BD64006F7AE1 /* AppDelegate.swift */; };
 		7BF828461EE6BD64006F7AE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF828441EE6BD64006F7AE1 /* Main.storyboard */; };
 		7BF828481EE6BD64006F7AE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BF828471EE6BD64006F7AE1 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B0960551EE98249000A5E3D /* CellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
 		7BF8283D1EE6BD64006F7AE1 /* ExpandBleTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpandBleTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BF828401EE6BD64006F7AE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BF828451EE6BD64006F7AE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			children = (
 				7BF828561EE6BE44006F7AE1 /* UpperCell.swift */,
 				7BF828581EE6BE68006F7AE1 /* SubCell.swift */,
+				7B0960551EE98249000A5E3D /* CellViewModel.swift */,
 			);
 			name = ExpandableCell;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				7BF828411EE6BD64006F7AE1 /* AppDelegate.swift in Sources */,
 				7BF8285F1EE6C36E006F7AE1 /* File.swift in Sources */,
 				7BF828571EE6BE44006F7AE1 /* UpperCell.swift in Sources */,
+				7B0960561EE98249000A5E3D /* CellViewModel.swift in Sources */,
 				7BF828591EE6BE68006F7AE1 /* SubCell.swift in Sources */,
 				7BF8285C1EE6BF0A006F7AE1 /* SchoolData.swift in Sources */,
 				7BF828541EE6BDBC006F7AE1 /* ExpandableTableView.swift in Sources */,

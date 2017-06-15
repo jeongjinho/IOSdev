@@ -112,9 +112,9 @@ class ExpandableTableView: UIViewController {
 
     func initialData ()  {
         
-        let koreaUniv = SchoolData.init(schoolName:"korea Univ", departMents:
+        let koreaUniv = SchoolData.init(schoolName:"korea Univ", schoolImage:"korea", departMents:
                                                     [DepartMent.init(departMentName:"화학과", peopleNumber: 50),                                                        DepartMent.init(departMentName:"법학과", peopleNumber: 32),DepartMent.init(departMentName:"컴퓨터학부", peopleNumber: 35)])
-        let yeonseiUniv = SchoolData.init(schoolName: "yeonsei Univ", departMents:
+        let yeonseiUniv = SchoolData.init(schoolName: "yeonsei Univ", schoolImage: "yeonsei", departMents:
                                                         [DepartMent.init(departMentName:"의과", peopleNumber: 100),                                                        DepartMent.init(departMentName:"수의학과", peopleNumber: 50),DepartMent.init(departMentName:"기계학과", peopleNumber: 70)])
         
        self.data = [koreaUniv,yeonseiUniv]

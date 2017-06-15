@@ -14,10 +14,11 @@ class SchoolData: NSObject{
     
     var schoolName: String?
     var departMents: [DepartMent?]?
+    var schoolImageName: String?
     
-    
-    init(schoolName name: String,departMents dpts:[DepartMent]?) {
+    init(schoolName name: String, schoolImage: String,departMents dpts:[DepartMent]?) {
         self.schoolName = name
+        self.schoolImageName = schoolImage
         self.departMents = dpts
     }
 }
