@@ -9,11 +9,11 @@
 import Foundation
 
 
-class SchoolData: NSObject{
+public class SchoolData: NSObject{
 
     
     var schoolName: String?
-    var departMents: [DepartMent?]?
+    var departMents: [DepartMent]?
     var schoolImageName: String?
     
     init(schoolName name: String, schoolImage: String,departMents dpts:[DepartMent]?) {
@@ -24,7 +24,7 @@ class SchoolData: NSObject{
 }
 
 
-class DepartMent: NSObject{
+public class DepartMent: NSObject{
 
     var departMentName: String?
     var peopleNumber: Int?

@@ -30,10 +30,10 @@ extension TextForCellProtocol{
     }
 }
 
-struct LabelViewModel:TextForCellProtocol {
-    
+class LabelViewModel:TextForCellProtocol {
+ 
     var title: String
-   
+    
     
     init?(datas inData:SchoolData) {
         
@@ -42,12 +42,23 @@ struct LabelViewModel:TextForCellProtocol {
         
     }
     
+    
+}
+
+extension UILabel{
+    func configureUpperLabel(_ viewModel: TextForCellProtocol) {
+        
+        self.text = viewModel.title
+        self.textColor = viewModel.textColor
+        
+    }
+
 }
 
 
 protocol ImageForCellProtocol {
     
-    var imageName: String {get set}
+    var image: UIImage {get}
     var alpha: Float {get}
 }
 
@@ -57,19 +68,28 @@ extension ImageForCellProtocol{
     
         return 1
     }
-    var imageName: String{
+    var image: UIImage{
         
-        return ""
+        return  UIImage(named:"default")!
     }
 }
 
-struct ImageViewModel:ImageForCellProtocol {
-    var imageName: String
+class ImageViewModel:ImageForCellProtocol {
+    var image: UIImage
 
     
-    init?(data inData: SchoolData) {
+    init?(datas inData: SchoolData) {
         
         guard let schoolImageString = inData.schoolImageName else { return nil }
-        self.imageName = schoolImageString
+        self.image = UIImage(named:schoolImageString)!
     }
+}
+
+extension UIImageView{
+
+    func configureUpperBackImage(_ viewModel: ImageForCellProtocol){
+        
+      self.image = viewModel.image
+    }
+    
 }
