@@ -30,7 +30,7 @@ extension TextForCellProtocol{
     }
 }
 
-class LabelViewModel:TextForCellProtocol {
+struct LabelViewModel:TextForCellProtocol {
  
     var title: String
     
@@ -42,13 +42,34 @@ class LabelViewModel:TextForCellProtocol {
         
     }
     
+   
     
 }
 
-extension UILabel{
-    func configureUpperLabel(_ viewModel: TextForCellProtocol) {
+struct  SubLabelViewModel:TextForCellProtocol {
+    var title: String
+    var textColor: UIColor {
+    
+        return .black
+    }
+    init?(SubDatas inData:DepartMent) {
+        guard let titleString =  inData.departMentName else { return nil }
+        print("\(titleString)")
+        self.title = titleString
         
+        }
+    
+    
+    }
+
+
+
+
+extension UILabel{
+    func configureLabel(_ viewModel: TextForCellProtocol) {
+      
         self.text = viewModel.title
+          print("\(self.text)")
         self.textColor = viewModel.textColor
         
     }
@@ -74,7 +95,7 @@ extension ImageForCellProtocol{
     }
 }
 
-class ImageViewModel:ImageForCellProtocol {
+struct ImageViewModel:ImageForCellProtocol {
     var image: UIImage
 
     

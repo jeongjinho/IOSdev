@@ -45,16 +45,17 @@ extension ExpandableTableViewVM : UITableViewDelegate,UITableViewDataSource{
               upperCell.selectionStyle = .none
                 return upperCell
         }else {
-            if let rowData  = data[selectedRow!] {
+            let dptIndex = indexPath.row - selectedRow! - 1
+            if let rowData  = data[selectedRow!]?.departMents?[dptIndex] {
                 let subCell = tableView.dequeueReusableCell(withIdentifier:"SubCell", for: indexPath) as! SubCell
                 
 //            let parentCellIndex = getParentCellIndex(expansionIndex: indexPath.row)
                // print("패런츠셀 : " +  "\(parentCellIndex)")
-                print("셀렉트셀 : " +  "\(selectedRow)")
-                let dptIndex = indexPath.row - selectedRow! - 1
+              
+            
                      
-                subCell.dptNameLabel.text = rowData.departMents?[dptIndex].departMentName
-                 subCell.selectionStyle = .none
+                subCell.configureSubCellLabel(rowData)
+                    subCell.selectionStyle = .none
                 return subCell
                 }
             

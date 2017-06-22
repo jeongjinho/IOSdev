@@ -32,7 +32,7 @@ class UpperCell: UITableViewCell {
     func configureSchoolName() {
         let viewModel = LabelViewModel.init(datas:vm!)
         
-        schoolNameLabel.configureUpperLabel(viewModel!)
+        schoolNameLabel.configureLabel(viewModel!)
         
     
     }
