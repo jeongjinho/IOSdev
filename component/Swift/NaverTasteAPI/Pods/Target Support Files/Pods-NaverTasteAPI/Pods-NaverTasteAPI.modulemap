@@ -1,0 +1,6 @@
+framework module Pods_NaverTasteAPI {
+  umbrella header "Pods-NaverTasteAPI-umbrella.h"
+
+  export *
+  module * { export * }
+}
