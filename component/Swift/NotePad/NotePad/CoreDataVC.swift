@@ -26,6 +26,7 @@ class CoreDB {
         let fetch: NSFetchRequest<Note> = Note.fetchRequest()
         return fetch
     }()
+    
     func insertNewData(entityName entity: String) -> Any {
     
         let mangeObject = NSEntityDescription.insertNewObject(forEntityName:entity, into:context)

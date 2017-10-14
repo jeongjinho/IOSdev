@@ -10,14 +10,17 @@ import UIKit
 import CoreData
 class MainVC: CoreDataVC{
 
-    @IBOutlet weak var notesCollectionView: UICollectionView!
+    @IBOutlet weak var notesCollectionView: UICollectionView!{
+        didSet{
+          
+        }
+    }
     
-        //let coreDelegate = CoreDelegate()
     var mainCollectionVM: MainCollectionViewModel?
     var notes: [Note] = []
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
         
         let sortDescriptor = NSSortDescriptor(key: "date", ascending: false)
         

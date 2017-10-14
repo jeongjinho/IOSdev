@@ -87,9 +87,9 @@ class DefaultAlert {
      ---
     **/
     
-     private var completeHandler: ((Void) -> Void)?
+     private var completeHandler: (() -> Void)?
     
-    func basicAlert(title:String, inputMessage:String, viewController: UIViewController ,alertButtonStyle:AlertButtonStyle,complete:((Void) -> Void)?) {
+    func basicAlert(title:String, inputMessage:String, viewController: UIViewController ,alertButtonStyle:AlertButtonStyle,complete:(() -> Void)?) {
 
         let alert = UIAlertController(title: title, message: inputMessage, preferredStyle: UIAlertControllerStyle.alert)
         
@@ -130,7 +130,7 @@ class DefaultAlert {
 
 class CustomPickerView {
     
-     private var completeHandler: ((Void) -> Void)?
+     private var completeHandler: (() -> Void)?
     
     /**
      프로젝트 내에서 공통적으로 사용할 커스텀Alert입니다.
@@ -139,7 +139,7 @@ class CustomPickerView {
      - vc: toolbar의 크기를 지정 할 수 있는 현재VC
      - completeHandler: 확인버튼을 누른 후의 행동을 함수형태롤 지정
      **/
-    func toolbarForpickerView(vc :UIViewController,completeHandler: ((Void) -> Void)?) -> UIToolbar{
+    func toolbarForpickerView(vc :UIViewController,completeHandler: (() -> Void)?) -> UIToolbar{
         
         
          let toolBar = UIToolbar(frame: CGRect(x: 0, y: vc.view.frame.size.height/4, width: vc.view.frame.size.width, height: 40.0))
@@ -156,7 +156,7 @@ class CustomPickerView {
 
 
 class BlockBarButtonItem: UIBarButtonItem {
-    private var actionHandler: ((Void) -> Void)?
+    private var actionHandler: (() -> Void)?
     
     
     /**
@@ -168,7 +168,7 @@ class BlockBarButtonItem: UIBarButtonItem {
      - completeHandler: 매개변수로 넘어온 complete함수를  1차로 받는 함수에서 호출 할 수 있도록 넘겨줌
 
      **/
-    convenience init(title: String?, style: UIBarButtonItemStyle, actionHandler: ((Void) -> Void)?) {
+    convenience init(title: String?, style: UIBarButtonItemStyle, actionHandler: (() -> Void)?) {
         
        
         self.init(title: title, style: style, target: nil, action: #selector(barButtonItemPressed))
@@ -181,7 +181,7 @@ class BlockBarButtonItem: UIBarButtonItem {
         /*
     - barButtonItemPressed: 확인버튼을 누른후 버튼에서 맨처음 호출하는 함수 이곳에서 다시 complete 함수 호출
      */
-    func barButtonItemPressed(sender: UIBarButtonItem) {
+    @objc func barButtonItemPressed(sender: UIBarButtonItem) {
         actionHandler?()
     }
 }
