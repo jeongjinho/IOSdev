@@ -13,6 +13,7 @@ class MainVC: CoreDataVC{
     @IBOutlet weak var notesCollectionView: UICollectionView!{
         didSet{
           
+           
         }
     }
     

@@ -32,6 +32,12 @@ class CoreDB {
         let mangeObject = NSEntityDescription.insertNewObject(forEntityName:entity, into:context)
         return mangeObject 
     }
+    
+    func deleteData(data:Note){
+        
+        context.delete(data)
+        
+    }
   func  saveCoreDB(){
     
         do{
