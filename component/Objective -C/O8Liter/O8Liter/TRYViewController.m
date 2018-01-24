@@ -73,13 +73,13 @@
    
     TRYTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
    
-    if(indexPath.section==4){
-       
-        UIImage *image =  [Utility resizingImageSize:[UIImage imageNamed:_imageArray[indexPath.section]]];
-        cell.itemImage.image = image;
-    } else{
+//    if(indexPath.section==4){
+//
+//        UIImage *image =  [Utility resizingImageSize:[UIImage imageNamed:_imageArray[indexPath.section]]];
+//        cell.itemImage.image = image;
+//    } else{
         cell.itemImage.image = [UIImage imageNamed:_imageArray[indexPath.section]];
-    }
+ //   }
     
     CGPoint point = CGPointMake(cell.itemImage.image.size.width/2,cell.itemImage.image.size.height/2);
    

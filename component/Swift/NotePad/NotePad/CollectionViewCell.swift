@@ -8,9 +8,50 @@
 
 import UIKit
 
+
+
+extension UICollectionViewDelegate {
+    
+    
+    
+
+    
+}
+
+
+protocol Pressible {
+    
+    func Long()
+}
+
+
+
 class NoteCell: UICollectionViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
-    
+    var pressCallback: Pressible?
     @IBOutlet weak var dateLabel: UILabel!
+    var longpress: UILongPressGestureRecognizer?
+    
+
+    func  getPress(callback: Pressible) {
+        
+        pressCallback = callback
+        
+    }
+    
+     override func awakeFromNib() {
+        super.awakeFromNib()
+        longpress = UILongPressGestureRecognizer(target:self, action: "long")
+        longpress?.minimumPressDuration = 1.0
+        self.addGestureRecognizer(longpress!)
+        
+    
+    }
+    
+    func long(complettionHandler:(String)->Void) {
+       self.pressCallback?.Long()
+        complettionHandler("성공")
+        
+    }
 }

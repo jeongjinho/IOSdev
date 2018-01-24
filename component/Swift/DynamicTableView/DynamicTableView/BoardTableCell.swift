@@ -60,12 +60,14 @@ class BoardTableCell: UITableViewCell,UITableViewDelegate,UITableViewDataSource{
         
        
         cell.nameLbl.setTitle("애프토", for: .normal)
-        cell.contentLbl.text = "좋은댓글 입니다. 반가워용 s!!,ReplyTableCell,ReplyTableCell,ReplydsadsadasdasdasdasdasdasTableCell"
+        if(indexPath.row == 2){
+            cell.contentLbl.text = "좋은댓글 입니다. 반가워용 s!!,ReplyTableCell,ReplyTableCell,ReplydsadsadasdasdasdasdasdasTableCellTableCell,Replydsadsadasdasdasddsadhsalkdaskldhsalkdhaslkdhsalkdhaslkdhsalkdhsalkdhsalkdhaslkdsalkdhaslkhdkasl"
+        }else{
+             cell.contentLbl.text = "좋은댓글 입니다. 반가워용 s!!,ReplyTableCell,ReplyTableCell,klmlkmlkmlmlmklmlkmlmReplydsadsadasdasdasdasdasdasTableCell"
+        }
+       
         cell.layoutIfNeeded()
         print(cell.frame.size.height)
-        //ReplyTableView.estimatedRowHeight += cell.frame.size.height
-     //   self.ReplyDelegate?.getReplyHeight(height: cell.frame.size.height)
-       // self.currentHeight += cell.frame.size.height
         return cell
     }
     

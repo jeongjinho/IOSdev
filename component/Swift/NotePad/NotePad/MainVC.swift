@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 class MainVC: CoreDataVC{
+    
+    
 
     @IBOutlet weak var notesCollectionView: UICollectionView!{
         didSet{
@@ -38,13 +40,14 @@ class MainVC: CoreDataVC{
         mainCollectionVM = MainCollectionViewModel(vc: self, notes:notes)
         self.notesCollectionView.delegate = mainCollectionVM
         self.notesCollectionView.dataSource = mainCollectionVM
-
+        
            self.notesCollectionView.reloadData()
         
         
     }
         override func viewDidLoad() {
         super.viewDidLoad()
+        
             
     }
     

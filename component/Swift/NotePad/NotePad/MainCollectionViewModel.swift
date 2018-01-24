@@ -21,7 +21,11 @@ class MainCollectionViewModel: NSObject{
     }
 }
 
-extension MainCollectionViewModel: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
+extension MainCollectionViewModel: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,Pressible{
+    func Long() {
+    print("눌렸다")
+    }
+    
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         
@@ -51,7 +55,7 @@ extension MainCollectionViewModel: UICollectionViewDelegate,UICollectionViewData
         let noteTitle = Utility.genderOptString(string:note.title)
         let date = note.date
         let noteDate = Utility.dateString(date:date! as Date, inputFomat: "yy/MM/dd hh:mm:ss a")
-        
+        cell.pressCallback = self
         cell.titleLabel.text = noteTitle
         cell.dateLabel.text = noteDate
         
@@ -68,4 +72,8 @@ extension MainCollectionViewModel: UICollectionViewDelegate,UICollectionViewData
         
         main.navigationController?.pushViewController(readVC, animated: true)
     }
+    
+
+    
+    
 }

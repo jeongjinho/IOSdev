@@ -41,10 +41,10 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
      
         let cell = tableView.dequeueReusableCell(withIdentifier:"BoardTableCell", for: indexPath) as! BoardTableCell
         
-        cell.layoutSubviews()
-        cell.ReplyTableView.layoutIfNeeded()
-         cell.layoutIfNeeded()
-            
+     //   cell.layoutSubviews()
+//        cell.ReplyTableView.layoutIfNeeded()
+//         cell.layoutIfNeeded()
+        
             print(cell.contentView.frame.size.height)
       
             cell.replyTableVieweHeight.constant = cell.ReplyTableView.contentSize.height
